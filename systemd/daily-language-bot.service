@@ -1,0 +1,18 @@
+[Unit]
+Description=Daily Language Telegram Bot Service
+After=network.target
+
+[Service]
+User=alex
+ExecStart=/usr/bin/python3 -m daily-language-bot
+Restart=always
+RestartSec=10
+
+StandardOutput=journal
+StandardError=journal
+
+StateDirectory=daily-language-bot
+RuntimeDirectory=daily-language-bot
+
+[Install]
+WantedBy=multi-user.target

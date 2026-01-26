@@ -1,0 +1,133 @@
+backen;backte;gebacken;to bake
+befehlen;befahl;befohlen;to command, to order
+beginnen;begann;begonnen;to begin
+beißen;biss;gebissen;to bite
+betrügen;betrog;betrogen;to deceive, to cheat
+bewegen;bewog;bewogen;to move
+biegen;bog;gebogen;to bend, to turn
+bieten;bot;geboten;to offer, to bid
+binden;band;gebunden;to tie
+bitten;bat;gebeten;to request, to ask someone to do...
+blasen;blies;geblasen;to blow, to sound
+bleiben;blieb;geblieben;to stay, to remain
+braten;briet;gebraten;to roast
+brechen;brach;gebrochen;to break
+brennen;brannte;gebrannt;to burn
+bringen;brachte;gebracht;to bring, take to somewhere...
+denken;dachte;gedacht;to think
+dürfen;durfte;gedurft;to be allowed to
+empfehlen;empfahl;empfohlen;to recommend
+erschrecken;erschrak;erschrocken;to be frightened
+essen;aß;gegessen;to eat
+fahren;fuhr;gefahren;to drive, to go (by some transport)
+fallen;fiel;gefallen;to fall
+fangen;fing;gefangen;to catch
+finden;fand;gefunden;to find
+fliegen;flog;geflogen;to fly
+fliehen;floh;geflohen;to flee, to run away
+fließen;floss;geflossen;to flow
+fressen;fraß;gefressen;to eat (done by *animals*)
+frieren;fror;gefroren;to freeze, to be cold
+geben;gab;gegeben;to give
+gedeihen;gedieh;gediehen;to flourish, to prosper
+gehen;ging;gegangen;to go (by foot), to walk
+gelingen;gelang;gelungen;to succeed
+gelten;galt;gegolten;to be valid, to be worth of
+genießen;genoss;genossen;to enjoy
+geraten;geriet;geraten;to fall into..., to get into...
+geschehen;geschah;geschehen;to happen
+gewinnen;gewann;gewonnen;to win, to gain
+gießen;goss;gegossen;to pour
+gleichen;glich;geglichen;to resemble
+gleiten;glitt;geglitten;to glide, to slide
+graben;grub;gegraben;to dig
+greifen;griff;gegriffen;to grasp, to grab hold of
+haben;hatte;gehabt;to have
+halten;hielt;gehalten;to hold *OR* to bring yourself to a standstill
+hängen;hing;gehangen;to be hanging
+heben;hob;gehoben;to raise, to lift
+heißen;hieß;geheißen;to be called *OR* to bid
+helfen;half;geholfen;to help
+kennen;kannte;gekannt;to know
+klingen;klang;geklungen;to sound
+kommen;kam;gekommen;to come
+können;konnte;gekonnt;can, to be able to
+kriechen;kroch;gekrochen;to crawl
+laden;lud;geladen;to load *OR* to invite
+lassen;ließ;gelassen;to let *OR* leave (something behind)
+laufen;lief;gelaufen;to run
+leiden;litt;gelitten;to suffer
+leihen;lieh;geliehen;to lend
+lesen;las;gelesen;to read
+liegen;lag;gelegen;to lie (in place)
+lügen;log;gelogen;to lie (tell not truth)
+messen;maß;gemessen;to measure
+mögen;mochte;gemocht;to like
+müssen;musste;gemusst;must, have to
+nehmen;nahm;genommen;to take
+nennen;nannte;genannt;to name, to call
+pfeifen;pfiff;gepfiffen;to whistle, to pipe
+raten;riet;geraten;to advise *OR* to guess
+reiben;rieb;gerieben;to rub
+reißen;riss;gerissen;to tear, to rip
+reiten;ritt;geritten;to ride (on horse)
+rennen;rannte;gerannt;to run
+riechen;roch;gerochen;to smell
+rufen;rief;gerufen;to call, to shout
+scheiden;schied;geschieden;to separate
+scheinen;schien;geschienen;to seem *OR* to shine
+schieben;schob;geschoben;to shove, to push
+schießen;schoss;geschossen;to shoot
+schlafen;schlief;geschlafen;to sleep
+schlagen;schlug;geschlagen;to hit, to beat, to strike
+schließen;schloss;geschlossen;to shut *OR* to conclude, to finish
+schneiden;schnitt;geschnitten;to cut
+schreiben;schrieb;geschrieben;to write
+schreien;schrie;geschrie(e)n;to shout / to yell
+schweigen;schwieg;geschwiegen;to be(come) silent
+schwellen;schwoll;geschwollen;to swell
+schwimmen;schwamm;geschwommen;to swim
+schwingen;schwang;geschwungen;to swing
+schwören;schwur;geschworen;to swear (on oath)
+sehen;sah;gesehen;to see
+sein;war;gewesen;to be
+senden;sandte;gesandt;to send
+singen;sang;gesungen;to sing
+sinken;sank;gesunken;to sink
+sitzen;saß;gesessen;to be sitting, to sit
+sollen;sollte;gesollt;to be obliged to, be supposed to
+sprechen;sprach;gesprochen;to speak
+springen;sprang;gesprungen;to jump, to spring
+stechen;stach;gestochen;to prick, to sting
+stehen;stand;gestanden;to stand
+stehlen;stahl;gestohlen;to steal
+steigen;stieg;gestiegen;to rise, to mount
+sterben;starb;gestorben;to die
+stinken;stank;gestunken;to stink
+stoßen;stieß;gestoßen;to push, to kick
+streiten;stritt;gestritten;to quarrel, to clash
+tragen;trug;getragen;to carry *OR* to wear
+treffen;traf;getroffen;to meet *OR* to hit (a bullseye)
+treiben;trieb;getrieben;to force, to drive (somebody someway), to urge *OR* to drift
+treten;trat;getreten;to step, to go
+trinken;trank;getrunken;to drink
+tun;tat;getan;to do
+verbergen;verbarg;verborgen;to hide, to conceal
+verderben;verdarb;verdorben;to spoil, to ruin
+vergessen;vergaß;vergessen;to forget
+verlassen;verließ;verlassen;to leave (e.g. a place/person)
+verlieren;verlor;verloren;to lose
+vermeiden;vermied;vermieden;to avoid
+verschwinden;verschwand;verschwunden;to disappear
+verzeihen;verzieh;verziehen;to pardon, to excuse
+wachsen;wuchs;gewachsen;to grow (by itself)
+waschen;wusch;gewaschen;to wash
+wenden;wandte;gewandt;to turn
+werben;warb;geworben;to advertise, to push
+werden;wurde;geworden;to become *OR* to turn out
+werfen;warf;geworfen;to throw
+wiegen;wog;gewogen;to weigh
+wissen;wusste;gewusst;to know (a fact), to hold some knowledge
+wollen;wollte;gewollt;to want
+ziehen;zog;gezogen;to pull, to draw *OR* to go to, to move to (somewhere)
+zwingen;zwang;gezwungen;to compel, to force

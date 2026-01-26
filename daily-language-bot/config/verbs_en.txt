@@ -1,0 +1,52 @@
+be;was/were;been;быть
+begin;began;begun;начинать
+break;broke;broken;ломать
+bring;brought;brought;приносить
+buy;bought;bought;покупать
+build;built;built;строить
+choose;chose;chosen;выбирать
+come;came;come;приходить
+cost;cost;cost;стоить
+cut;cut;cut;резать
+do;did;done;делать
+draw;drew;drawn;рисовать, тянуть
+drive;drove;driven;водить (автомобиль)
+eat;ate;eaten;кушать
+feel;felt;felt;чувствовать
+find;found;found;находить
+get;got;got;получать, становиться
+give;gave;given;давать
+go;went;gone;идти
+have;had;had;иметь
+hear;heard;heard;слышать
+hold;held;held;держать
+keep;kept;kept;хранить
+know;knew;known;знать
+leave;left;left;покидать
+lead;led;led;вести, лидировать
+let;let;let;позволять
+lie;lay;lain;лежать
+lose;lost;lost;терять
+make;made;made;делать
+mean;meant;meant;значить
+meet;met;met;встречать
+pay;paid;paid;платить
+put;put;put;класть
+run;ran;run;бежать
+say;said;said;сказать
+see;saw;seen;видеть
+sell;sold;sold;продавать
+send;sent;sent;посылать
+set;set;set;устанавливать
+sit;sat;sat;сидеть
+speak;spoke;spoken;говорить
+spend;spent;spent;тратить, проводить время
+stand;stood;stood;стоять
+take;took;taken;брать
+teach;taught;taught;обучать
+tell;told;told;рассказывать
+think;thought;thought;думать
+understand;understood;understood;понимать
+wear;wore;worn;носить(одежду)
+win;won;won;побеждать
+write;wrote;written;писать
