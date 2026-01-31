@@ -34,7 +34,7 @@ class Bot:
         with open(pathlib.Path(data_dir) / 'token', 'r', encoding='utf-8') as f:
             self.app = ApplicationBuilder().token(f.read().strip()).post_init(self.__post_init).build()
         self.data_dir = data_dir
-        self.storage = SubManager(pathlib.Path(data_dir), self.app)
+        self.sub_manager = SubManager(pathlib.Path(data_dir), self.app)
         self._init_cmds()
 
 
@@ -49,9 +49,9 @@ class Bot:
 
 
     def _init_cmds(self):
-        self.app.add_handler(SubConversation(self.storage))
-        self.app.add_handler(UnsubConversation(self.storage))
-        self.app.add_handler(EditConversation(self.storage))
+        self.app.add_handler(SubConversation(self.sub_manager))
+        self.app.add_handler(UnsubConversation(self.sub_manager))
+        self.app.add_handler(EditConversation(self.sub_manager))
         self.app.add_handler(CommandHandler('list', self._list))
         self.app.add_handler(CommandHandler('test', self._test))
         self.app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, dispatch_check))
@@ -59,7 +59,7 @@ class Bot:
 
     async def _list(self, update: Update, context: CallbackContext):
         chat_id = update.message.chat_id
-        subs = self.storage.get_subs(chat_id)
+        subs = self.sub_manager.get_subs(chat_id)
         if len(subs) == 0:
             await update.message.reply_text('You have no subscriptions')
             return
@@ -95,4 +95,4 @@ class Bot:
             job=fake_job,
         )
 
-        await self.storage.JOBS[JobTypes(task)](fake_context)
+        await self.sub_manager.JOBS[JobTypes(task)](fake_context)

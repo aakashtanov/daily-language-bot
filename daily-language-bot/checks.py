@@ -26,9 +26,23 @@ async def dispatch_check(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text('Unsupported task')
 
 
+def parse_numbers_answer(text: str, language: str) -> list[str]:
+    if language == 'de':
+        # all answers are one-word
+        return text.split()
+
+    answer_parts = text.split('\n')
+    res = []
+    res.extend(answer_parts[:3]) # numbers translated
+
+    # Rest is split by any whitespace and linearized
+    res.extend([ans for sub_answers in answer_parts[3:] for ans in sub_answers.split()])
+    return res
+
+
 async def check_numbers_task(update: Update, chat_id, expected: dict):
     language = expected['language']
-    answers = update.message.text.lower().split()
+    answers = parse_numbers_answer(update.message.text.lower(), language)
     if len(answers) < DAILY_NUMBERS_BATCH_SIZE * 3:
         logger.info(f'Invalid answer length ({len(answers)}) from {chat_id}')
         await update.message.reply_text(f'❌ Please send {DAILY_NUMBERS_BATCH_SIZE * 3} answers.')
@@ -37,7 +51,7 @@ async def check_numbers_task(update: Update, chat_id, expected: dict):
     score = 0
     score_message = ''
 
-    # First 10 – Numbers to german text
+    # First 10 – Numbers to text
     score_message += '🔢 *Numbers*\n'
     for ans, num in zip(answers[:DAILY_NUMBERS_BATCH_SIZE], expected['numerical']):
         correct: bool = ans == NUMBERS[language][num]
@@ -47,7 +61,7 @@ async def check_numbers_task(update: Update, chat_id, expected: dict):
             score += 1
     score_message += '\n'
 
-    # Second 10 – German text to numbers
+    # Second 10 – Text to numbers
     score_message += '📝 *Text Numbers*\n'
     for ans, num in zip(answers[DAILY_NUMBERS_BATCH_SIZE:DAILY_NUMBERS_BATCH_SIZE * 2], expected['text']):
         correct: bool = ans.isdigit() and int(ans) == num

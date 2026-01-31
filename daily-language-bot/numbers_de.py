@@ -36,4 +36,4 @@ for i in range(20, 100):
         NUMBERS['EN'][i] = TENS['EN'][i]
     else:
         NUMBERS['DE'][i] = NUMBERS['DE'][ones] + 'und' + TENS['DE'][tens]
-        NUMBERS['EN'][i] = TENS['EN'][tens] + NUMBERS['EN'][ones]
+        NUMBERS['EN'][i] = ' '.join([TENS['EN'][tens], NUMBERS['EN'][ones]])

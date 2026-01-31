@@ -69,6 +69,7 @@ async def send_daily_numbers(context: ContextTypes.DEFAULT_TYPE):
         chat_id,
         InputFile(audio_file, filename='daily_numbers.ogg'),
         duration=get_duration(audio_track_file),
+        disable_notification=True
     )
 
 
@@ -85,18 +86,12 @@ async def send_daily_verbs(context: ContextTypes.DEFAULT_TYPE):
         translation = todays[3]
 
     message = (
-       f'📖{LanguageEmoji[language]} Daily Irregular verbs\n\n'
-       f'{verb} - {translation}\n'
+        f'📖{LanguageEmoji[language]} <b>Daily Irregular verbs</b>\n\n'
+        f'<b>{verb}</b> - <tg-spoiler>{translation}</tg-spoiler>\n'
+        f'Forms: <tg-spoiler><b>{verb_forms[0]} - {verb_forms[1]} - {verb_forms[2]}</b></tg-spoiler>'
     )
-    spoiler_start = len(message) + 10 # yeah, yeah, magic
-    spoiler_len = len(''.join(verb_forms)) + 6
-    forms = f'Forms: {verb_forms[0]} - {verb_forms[1]} - {verb_forms[2]}'
 
-    await context.bot.send_message(chat_id, message + forms, entities=[
-        MessageEntity(type=MessageEntityType.BOLD, offset=30, length=len(verb)),
-        MessageEntity(type=MessageEntityType.BOLD, offset=spoiler_start, length=spoiler_len),
-        MessageEntity(type=MessageEntityType.SPOILER, offset=spoiler_start, length=spoiler_len),
-    ])
+    await context.bot.send_message(chat_id, message, parse_mode=ParseMode.HTML)
     audio_dir = os.path.join(context.job.data['data_dir'], 'audio')
     audio_track_file = generate_voice_track(verb_forms, audio_dir=audio_dir, out_name='daily_numbers.ogg', lang=language)
     audio_file = open(audio_track_file, 'rb')
