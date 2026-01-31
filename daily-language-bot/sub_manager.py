@@ -2,7 +2,6 @@ import json
 import pathlib
 import logging
 from dataclasses import dataclass, asdict
-from typing import Dict, List
 from datetime import time, timezone, timedelta
 
 from telegram.ext import CallbackContext
@@ -31,7 +30,7 @@ class SubManager:
     def __init__(self, data_dir: pathlib.Path, context: CallbackContext):
         self.data_dir = data_dir
         self.storage_path = data_dir / 'subs.json'
-        self.data: Dict[int, List[SubInfo]] = {}
+        self.data: dict[int, list[SubInfo]] = {}
         self.ctx = context
         self._load()
         self._restore_subs()
@@ -126,7 +125,7 @@ class SubManager:
         return False
 
 
-    def get_subs(self, chat_id: int) -> List[SubInfo]:
+    def get_subs(self, chat_id: int) -> list[SubInfo]:
         self._load()
         if len(self.data) == 0 or chat_id not in self.data:
             return []
@@ -134,6 +133,6 @@ class SubManager:
 
 
     @property
-    def subs(self) -> Dict[int, List[SubInfo]]:
+    def subs(self) -> dict[int, list[SubInfo]]:
         self._load()
         return self.data

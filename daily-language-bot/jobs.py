@@ -4,9 +4,9 @@ import os
 import pathlib
 from enum import StrEnum
 
-from telegram.constants import ParseMode, MessageEntityType
+from telegram.constants import ParseMode
 from telegram.ext import ContextTypes
-from telegram import InputFile, MessageEntity
+from telegram import InputFile
 
 from .numbers_de import NUMBERS
 from .audio import generate_voice_track, get_duration

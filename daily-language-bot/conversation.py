@@ -1,5 +1,4 @@
 import logging
-from typing import List, Tuple
 from functools import wraps
 from enum import Enum
 
@@ -19,7 +18,7 @@ class ActionButton:
     CANCEL = ('❌Cancel', 'action:cancel')
 
 
-def build_inline_keyboard(button_names: List[List[Tuple[str, str]]]) -> InlineKeyboardMarkup:
+def build_inline_keyboard(button_names: list[list[tuple[str, str]]]) -> InlineKeyboardMarkup:
     buttons = []
     for line in button_names:
         line_buttons = [InlineKeyboardButton(name, callback_data=cd) for name, cd in line]
@@ -27,7 +26,7 @@ def build_inline_keyboard(button_names: List[List[Tuple[str, str]]]) -> InlineKe
     return InlineKeyboardMarkup([[InlineKeyboardButton(name, callback_data=cd) for name, cd in line] for line in button_names])
 
 
-def make_choice_keyboard(button_names: List[List[Tuple[str, str]]] = None, only_cancel: bool = False) -> InlineKeyboardMarkup:
+def make_choice_keyboard(button_names: list[list[tuple[str, str]]] = None, only_cancel: bool = False) -> InlineKeyboardMarkup:
     choice_kb = [[ActionButton.CANCEL] if only_cancel else [ActionButton.CANCEL, ActionButton.BACK]]
     return build_inline_keyboard(button_names + choice_kb) if button_names else build_inline_keyboard(choice_kb)
 
